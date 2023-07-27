@@ -61,7 +61,220 @@ document.addEventListener('DOMContentLoaded', function() {
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/healer/healer/healer.json'
       ]
     },
-    
+    { 
+      id: "freezer", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_freeze/bot_freeze.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_freeze/bot_freeze_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_freeze/bot_freeze_ammo.json'
+      ]
+    },
+    { 
+      id: "sakura", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_drone/bot_drone.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_drone/bot_drone_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_drone/bot_drone_ammo.json'
+      ]
+    },
+    { 
+      id: "angry_tree", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_tree/bot_tree.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_tree/bot_tree_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_tree/bot_tree_ammo.json'
+      ]
+    },
+    { 
+      id: "halabib", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/halabib/halabib.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/halabib/halabib_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/halabib/halabib_ammo.json'
+      ]
+    },
+    { 
+      id: "daddy_donut", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_decoy/tank_decoy.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_decoy/tank_decoy_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_decoy/tank_decoy_ammo.json'
+      ]
+    },
+    { 
+      id: "tanabe", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/prex/prex.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/prex/prex_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/prex/prex_ammo.json'
+      ]
+    },
+    { 
+      id: "aegis", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_shield/tank_shield.json'
+      ]
+    },
+    { 
+      id: "beenado", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_drone/tank_drone/tank_drone.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_drone/tank_drone/tank_drone_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_drone/tank_drone/tank_drone_ammo.json'
+      ]
+    },
+    { 
+      id: "bumba", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bumba/bumba.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bumba/bumba_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bumba/bumba_ammo.json'
+      ]
+    },
+    { 
+      id: "gungnir", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/gigatank/gigatank.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/gigatank/gigatank_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/gigatank/gigatank_ammo.json'
+      ]
+    },
+    { 
+      id: "thorondor", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/thorondor/thorondor.json'
+      ]
+    },
+    { 
+      id: "multitransport", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/lolis/lolis.json'
+      ]
+    },
+    { 
+      id: "binho", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/binho/binho.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/binho/binho_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/binho/binho_ammo.json'
+      ]
+    },
+    { 
+      id: "kamecha", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_white_hole/st_bot_white_hole.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_white_hole/st_bot_white_hole_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_white_hole/st_bot_white_hole_ammo.json'
+      ]
+    },
+    { 
+      id: "lawnmower", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_lawnmower/st_lawnmower.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_lawnmower/st_lawnmower_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_lawnmower/st_lawnmower_ammo.json'
+      ]
+    },
+    { 
+      id: "pap", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_pap/st_pap.json'
+      ]
+    },
+    { 
+      id: "fef", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_fef/st_fef.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_fef/st_fef_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_fef/st_fef_ammo.json'
+      ]
+    },
+    { 
+      id: "ilegal", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_ilegal/st_ilegal.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_ilegal/st_ilegal_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_ilegal/missil_ammo.json'
+      ]
+    },
+    { 
+      id: "tilha", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_colum/st_colum.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_colum/st_colum_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_colum/st_colum_ammo.json'
+      ]
+    },
+    { 
+      id: "toblerone", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_anti_nuke/st_bot_anti_nuke.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_anti_nuke/st_bot_anti_nuke_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_anti_nuke/st_bot_anti_nuke_ammo.json'
+      ]
+    },
+    { 
+      id: "ggspider", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_ggspider_build/st_ggspider/st_ggspider.json'
+      ]
+    },
+    { 
+      id: "hindenburg", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_airship/st_airship.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_airship/st_airship_tool_weapon_missile.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_airship/st_airship_ammo_missile.json'
+      ]
+    },
+    { 
+      id: "canhao", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/canhao/canhao.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/canhao/canhao_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/canhao/canhao_ammo.json'
+      ]
+    },
+    { 
+      id: "kinha", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/kinha/kinha.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/kinha/kinha_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/kinha/kinha_ammo.json'
+      ]
+    },
+    { 
+      id: "maciota", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/maciota/maciota.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/maciota/maciota_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/maciota/maciota_ammo.json'
+      ]
+    },
+    { 
+      id: "bunker", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bunker_build/bunker/bunker.json'
+      ]
+    },
+    { 
+      id: "spell_tower", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/spell_heal/spell_heal.json'
+      ]
+    },
+    { 
+      id: "assimilator", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/metal_destructor/metal_destructor.json'
+      ]
+    },
+    { 
+      id: "sauron", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/titan_radar/titan_radar.json'
+      ]
+    },
   ];
 
   dataSources.forEach(({ id, urls }) => {
@@ -154,6 +367,36 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         }
 
+        const contentIdArmor = id + "-armor";
+        const contentDivArmor = document.getElementById(contentIdArmor);
+        
+        if (contentDivArmor && unitData.unit_types) {
+          if (Array.isArray(unitData.unit_types)) {
+            let unitTypesFiltered = unitData.unit_types
+              .map(type => type.replace('UNITTYPE_', ''))
+              .filter(type => ["Land", "Air", "Structure", "Orbital", "Naval", "Hover"].includes(type));
+        
+            // If both "Land" and "Hover" are found, take "Hover"
+            if (unitTypesFiltered.includes("Land") && unitTypesFiltered.includes("Hover")) {
+              unitTypesFiltered = unitTypesFiltered.filter(type => type !== "Land");
+            }
+            
+            // If both "Air" and "Orbital" are found, take "Air"
+            if (unitTypesFiltered.includes("Air") && unitTypesFiltered.includes("Orbital")) {
+              unitTypesFiltered = unitTypesFiltered.filter(type => type !== "Orbital");
+            }
+            
+            contentDivArmor.innerHTML = unitTypesFiltered.join('<br/>');
+          } else {
+            const type = unitData.unit_types.replace('UNITTYPE_', '');
+            if (["Land", "Air", "Structure", "Orbital", "Naval", "Hover"].includes(type)) {
+              contentDivArmor.textContent = type;
+            }
+          }
+        }
+        
+
+
         const contentIdTargetLayers = id + "-target_layers";
         const contentDivTargetLayers = document.getElementById(contentIdTargetLayers);
         if (contentDivTargetLayers && weaponData.target_layers) {
@@ -189,6 +432,21 @@ document.addEventListener('DOMContentLoaded', function() {
         contentDivRecharge.textContent = rechargeRate + "s";
       }
 
+        const contentIdAmmoCapacity = id + "-ammo_capacity";
+        const contentDivAmmoCapacity = document.getElementById(contentIdAmmoCapacity);
+        if (contentDivAmmoCapacity && weaponData.ammo_capacity) {
+        contentDivAmmoCapacity.textContent = weaponData.ammo_capacity;
+      }
+
+
+        const contentIdAmmosPerCharge = id + "-ammos_per_charge";
+        const contentDivAmmosPerCharge = document.getElementById(contentIdAmmosPerCharge);
+        if (contentDivAmmosPerCharge && weaponData.ammo_capacity && weaponData.ammo_per_shot) {
+        const ammosPerCharge = weaponData.ammo_capacity / weaponData.ammo_per_shot;
+        contentDivAmmosPerCharge.textContent = ammosPerCharge;
+       }
+
+
 
 
 
@@ -197,6 +455,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (contentDivRateOfFire && weaponData.rate_of_fire) {
           contentDivRateOfFire.textContent = weaponData.rate_of_fire;
         }
+
+        const contentIdAmmoPerShot = id + "-ammo_per_shot";
+        const contentDivAmmoPerShot = document.getElementById(contentIdAmmoPerShot);
+        if (contentDivAmmoPerShot && weaponData.ammo_per_shot) {
+          contentDivAmmoPerShot.textContent = weaponData.ammo_per_shot;
+        }
+
 
         const contentIdDamage = id + "-damage";
         const contentDivDamage = document.getElementById(contentIdDamage);
@@ -217,6 +482,14 @@ document.addEventListener('DOMContentLoaded', function() {
           }
           contentDivSplashDamage.textContent = splashDamageText;
         }
+
+        const contentIdDps = id + "-dps";
+        const contentDivDps = document.getElementById(contentIdDps);
+        if (contentDivDps && weaponData.rate_of_fire && ammoData.damage) {
+        const dps = weaponData.rate_of_fire * ammoData.damage;
+        contentDivDps.textContent = dps;}
+
+
       })
       .catch(err => console.log(err));
   });
