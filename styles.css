@@ -53,14 +53,14 @@ html, body {
   line-height: 1.7;
 }
 
-.name{color: rgba(40, 180, 300, 0.06);
+.name{color: rgba(40, 180, 300, 0.05);
   font-weight: bold;
   position: absolute;
   z-index: -1;
-  font-size: 170px;
-  right: 60px; /* adjust this value */
-  top: 460px; /* adjust this value */
-  transform: scaleY(1.0);
+  font-size: 100px;
+  left: 600px; /* adjust this value */
+  top: 680px; /* adjust this value */
+  transform: scaleY(0.92);
   white-space: nowrap;
 }
 
@@ -244,7 +244,7 @@ hr {
   height: 700px;
   position: fixed;
   margin-left: 17%; 
-  top: 300px;
+  top: 290px;
   left: 0%;
   opacity: 1;
   background: url('https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/ui/frame60.gif') no-repeat center center /  1700px 736px,
