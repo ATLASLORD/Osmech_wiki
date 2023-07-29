@@ -53,13 +53,13 @@ html, body {
   line-height: 1.7;
 }
 
-.name{color: rgba(40, 180, 300, 0.05);
+.name{color: rgba(40, 150, 200, 0.08);
   font-weight: bold;
   position: absolute;
   z-index: -1;
   font-size: 100px;
   left: 100px; /* adjust this value */
-  top: 680px; /* adjust this value */
+  top: 675px; /* adjust this value */
   transform: scaleY(0.92);
   white-space: nowrap;
 }
@@ -97,7 +97,7 @@ html, body {
 
 .header:hover {
   width: 1390px;
-  height: 240px;
+  height: 230px;
   text-shadow: 0 0 10px #ffffff;
   z-index: 2;
   font-size: 19px;
