@@ -58,7 +58,7 @@ html, body {
   position: absolute;
   z-index: -1;
   font-size: 100px;
-  left: 600px; /* adjust this value */
+  left: 100px; /* adjust this value */
   top: 680px; /* adjust this value */
   transform: scaleY(0.92);
   white-space: nowrap;
