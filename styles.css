@@ -53,7 +53,7 @@ html, body {
   line-height: 1.7;
 }
 
-.name{color: rgba(40, 150, 200, 0.08);
+.name{color: rgba(40, 150, 200, 0.2);
   font-weight: bold;
   position: absolute;
   z-index: -1;
@@ -247,7 +247,7 @@ hr {
   top: 290px;
   left: 0%;
   opacity: 1;
-  background: url('https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/ui/frame60.gif') no-repeat center center /  1700px 736px,
+  background: url('https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/ui/framenew.gif') no-repeat center center /  1700px 736px,
   url('https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/ui/ui_frame.png') no-repeat center center / contain;
 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -271,21 +271,40 @@ hr {
 .model {
   position: absolute;
   grid-area: 1 / 1 / 1 / 7;
-  transform: scale(0.8) translateX(-600px) translateY(-820px);
-  opacity: 0;
-  filter: brightness(250%);
   pointer-events: none;
+  /* Chain animations: initial move -> looping move */
+  animation: initialMove 0.6s ease, loopModelPosition 2s ease-in-out 0.6s infinite;
 }
 
 
 
-.animateModel {
-  transform: scale(0.8) translateX(-600px) translateY(-220px);
-  opacity: 1;
-  filter: brightness(100%);
-  transition: transform 0.6s ease, opacity 0.6s, filter 0.6s ease-in; 
-  /* if you want opacity to transition at the same rate as transform */
+
+@keyframes initialMove {
+  from {
+    transform: scale(0.8) translateX(-600px) translateY(-820px);
+    opacity: 0;
+    filter: brightness(250%) blur(1px);
+  }
+  to {
+    transform: scale(0.8) translateX(-600px) translateY(-220px);
+    opacity: 1;
+    filter: brightness(100%) blur(0px);
+  }
 }
+
+@keyframes loopModelPosition {
+  0%, 100% {
+    transform: scale(0.8) translateX(-600px) translateY(-220px);
+    opacity: 1;
+    filter: brightness(100%) blur(0px);
+  }
+  50% {
+    transform: scale(0.8) translateX(-600px) translateY(-270px);
+    opacity: 1;
+    filter: brightness(100%) blur(0px);
+  }
+}
+
 
 
 
@@ -459,8 +478,10 @@ hr {
 
 
 .activeBtn{
-  transform: scale(1.3) translateX(20px); /* Start at 0 */
-  filter: contrast(1.8);
+  transform: scale(1.3) translateX(20px) translateZ(10px); /* Start at 0 */
+  filter: brightness(170%) contrast(1.1);
+  position: relative;
+  z-index: 10;
   transition: transform 0.1s ease-out;
 }
 
