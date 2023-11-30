@@ -53,20 +53,10 @@ html, body {
   line-height: 1.7;
 }
 
-@keyframes textAnimation {
-  0%, 100% {
-    opacity: 0.2;
-    filter: contrast(100%); /* Normal contrast */
-  }
-  50% {
-    opacity: 0.4;
-    filter: contrast(200%); /* Higher contrast */
-  }
-}
 
 
-.name {
-  color: rgba(40, 150, 200, 0.2);
+.nameA {
+  color: rgba(40, 150, 200, 0.24);
   font-weight: bold;
   position: absolute;
   z-index: -1;
@@ -74,30 +64,13 @@ html, body {
   left: 100px;
   top: 675px;
   transform: scaleY(0.92);
-  white-space: nowrap;
-
-  /* Applying the animation */
-  animation: textAnimation 2s ease-in-out infinite;
-}
-
-
-.namesave{color: rgba(40, 180, 300, 0.2);
-  font-weight: bold;
-  position: absolute;
-  z-index: -1;
-  font-size: 160px;
-  margin: 420px 550px;
-  transform: scaleY(1.15);
+  overflow:hidden;
   white-space: nowrap;
 }
 
-.colorsave{color: rgba(300, 50, 300, 0.2);
-  
-}
 
-.colorsave2{color: rgba(40, 180, 300, 0.2);
-  
-}
+
+
 
 .header{
   width: 1080px;
