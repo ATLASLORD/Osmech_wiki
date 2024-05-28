@@ -1,21 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const buttons = document.querySelectorAll('.hover-sound-button');
+    const buttons = document.querySelectorAll('.click-sound-button');
     const clickSound = document.getElementById('click-sound');
 
-    buttons.forEach((button, index) => {
-        // Create a new audio element for each button for the hover sound
-        const hoverSound = new Audio('pamove.mp3');
-        hoverSound.id = `hover-sound-${index}`;
-        button.dataset.hoverSoundId = hoverSound.id;
-
-        button.addEventListener('mouseenter', () => {
-            hoverSound.currentTime = 0; // Rewind to the start
-            hoverSound.play();
-        });
-
+    buttons.forEach(button => {
         button.addEventListener('click', () => {
-            clickSound.currentTime = 0; // Rewind to the start
-            clickSound.play();
+            try {
+                clickSound.currentTime = 0; // Rewind to the start
+                clickSound.play();
+            } catch (e) {
+                console.error('Error playing click sound:', e);
+            }
         });
     });
 });
