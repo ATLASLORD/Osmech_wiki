@@ -1,27 +1,28 @@
-function playSound() {
-    var sound = document.getElementById("click-sound");
-    sound.play();
-}
-
-function handleButtonClick(event, buttonId) {
-    event.preventDefault(); // Prevent the default anchor behavior
-    history.pushState(null, '', `#${buttonId}`); // Update the URL without scrolling
-    var button = document.getElementById(buttonId);
-    if (button) {
-        playSound(); // Play the sound
-        button.focus(); // Focus on the button to ensure it gets clicked without scrolling
-    }
-}
-
-function handleFragment() {
-    var fragment = location.hash.substring(1); // Get the fragment identifier without the "#"
-    if (fragment) {
-        var button = document.getElementById(fragment);
-        if (button) {
-            button.focus(); // Focus on the button to ensure it gets clicked without scrolling
+$(document).ready(function() {
+    function handleFragment() {
+        var fragment = window.location.hash.substring(1); // Get the fragment identifier without the "#"
+        if (fragment) {
+            var $target = $('[data-target="#' + fragment + '"]');
+            if ($target.length > 0) {
+                loadContent($target);
+            }
         }
     }
-}
 
-window.onload = handleFragment; // Handle fragment on page load
-window.onhashchange = handleFragment; // Handle fragment change without reloading
+    function loadContent($element) {
+        var targetId = $element.attr('data-target');
+        $(targetId).focus(); // Focus on the target element to simulate the click without scrolling
+        // You can add additional content loading logic here if necessary
+    }
+
+    // Bind click event
+    $('.js-content').on('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        loadContent($(this));
+    });
+
+    // Handle URL fragment on page load
+    handleFragment();
+    // Handle URL fragment change
+    $(window).on('hashchange', handleFragment);
+});
