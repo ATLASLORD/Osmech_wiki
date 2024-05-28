@@ -120,7 +120,7 @@ function changeURL(section) {
             content.innerHTML = '<p>Contenu pour le bouton 38</p>';
             break;
         default:
-            content.innerHTML = '<p>Contenu par défaut</p>';
+            content.innerHTML = '<p>Veuillez sélectionner une option</p>';
     }
 }
 
