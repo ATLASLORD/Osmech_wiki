@@ -435,6 +435,7 @@ hr {
 
 .label {
   color: #77D7FF;
+  text-shadow: 0 0 5px #77D7FF;
 }
 
 .label:hover {
