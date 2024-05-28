@@ -133,5 +133,10 @@ window.onpopstate = function(event) {
 // Initialiser le contenu en fonction de l'URL actuelle
 window.onload = function() {
     var section = location.hash.replace('#', '');
-    changeURL(section);
+    if (section) {
+        changeURL(section);
+    } else {
+        // Définir un contenu par défaut si aucun fragment d'URL n'est présent
+        document.getElementById('content').innerHTML = '<p>Veuillez sélectionner une option</p>';
+    }
 }
