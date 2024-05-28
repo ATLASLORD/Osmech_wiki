@@ -284,12 +284,12 @@ hr {
 
 @keyframes loopModelPosition {
   0%, 100% {
-    transform: scale(0.8) translateX(-600px) translateY(-220px);
+    transform: scale(0.8) translateX(-600px) translateY(-230px);
     opacity: 1;
     filter: brightness(100%) blur(0px);
   }
   50% {
-    transform: scale(0.8) translateX(-600px) translateY(-250px);
+    transform: scale(0.8) translateX(-600px) translateY(-260px);
     opacity: 1;
     filter: brightness(100%) blur(0px);
   }
