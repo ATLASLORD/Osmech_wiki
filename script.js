@@ -228,6 +228,14 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     },
     { 
+      id: "tripod", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tripod/tripod.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tripod/tripod_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tripod/tripod_ammo.json'
+      ]
+    },
+    { 
       id: "canhao", 
       urls: [
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/canhao/canhao.json', 
