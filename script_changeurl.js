@@ -1,3 +1,17 @@
+function playSound() {
+    var sound = document.getElementById("click-sound");
+    sound.play();
+}
+
+function handleButtonClick(event, buttonId) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    var button = document.getElementById(buttonId);
+    if (button) {
+        playSound(); // Play the sound
+        button.click(); // Simulate the button click
+    }
+}
+
 function handleFragment() {
     var fragment = location.hash.substring(1); // Get the fragment identifier without the "#"
     if (fragment) {
@@ -10,4 +24,3 @@ function handleFragment() {
 
 window.onload = handleFragment; // Handle fragment on page load
 window.onhashchange = handleFragment; // Handle fragment change without reloading
-
