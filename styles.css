@@ -263,7 +263,7 @@ hr {
   grid-area: 1 / 1 / 1 / 7;
   pointer-events: none;
   /* Chain animations: initial move -> looping move */
-  animation: initialMove 0.6s ease, loopModelPosition 2s ease-in-out 0.6s infinite;
+  animation: initialMove 0.6s ease, loopModelPosition 4s ease-in-out 0.6s infinite;
 }
 
 
@@ -284,12 +284,12 @@ hr {
 
 @keyframes loopModelPosition {
   0%, 100% {
-    transform: scale(0.8) translateX(-600px) translateY(-230px);
+    transform: scale(0.8) translateX(-600px) translateY(-220px);
     opacity: 1;
     filter: brightness(100%) blur(0px);
   }
   50% {
-    transform: scale(0.8) translateX(-600px) translateY(-260px);
+    transform: scale(0.8) translateX(-600px) translateY(-250px);
     opacity: 1;
     filter: brightness(100%) blur(0px);
   }
