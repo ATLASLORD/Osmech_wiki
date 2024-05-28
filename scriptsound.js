@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const buttons = document.querySelectorAll('.click-sound-button');
+    const buttons = document.querySelectorAll('.click-sound-button button');
     const clickSound = document.getElementById('click-sound');
 
     if (!clickSound) {
@@ -8,7 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     buttons.forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();  // Prevent default action of the button inside the anchor
+            event.stopPropagation(); // Stop the event from propagating to the anchor
+
             try {
                 clickSound.currentTime = 0; // Rewind to the start
                 clickSound.play().then(() => {
