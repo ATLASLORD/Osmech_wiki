@@ -5,10 +5,11 @@ function playSound() {
 
 function handleButtonClick(event, buttonId) {
     event.preventDefault(); // Prevent the default anchor behavior
+    history.pushState(null, '', `#${buttonId}`); // Update the URL without scrolling
     var button = document.getElementById(buttonId);
     if (button) {
         playSound(); // Play the sound
-        button.click(); // Simulate the button click
+        button.focus(); // Focus on the button to ensure it gets clicked without scrolling
     }
 }
 
@@ -17,7 +18,7 @@ function handleFragment() {
     if (fragment) {
         var button = document.getElementById(fragment);
         if (button) {
-            button.click(); // Programmatically click the button
+            button.focus(); // Focus on the button to ensure it gets clicked without scrolling
         }
     }
 }
