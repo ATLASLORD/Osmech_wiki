@@ -120,7 +120,7 @@ function changeURL(section) {
             content.innerHTML = '<p>Contenu pour le bouton 38</p>';
             break;
         default:
-            content.innerHTML = '<p>Contenu par défaut</p>';
+            content.innerHTML = '<p>Veuillez sélectionner une option</p>';
     }
 }
 
@@ -137,126 +137,6 @@ window.onload = function() {
         changeURL(section);
     } else {
         // Définir un contenu par défaut si aucun fragment d'URL n'est présent
-        document.getElementById('content').innerHTML = `
-            <p>Veuillez sélectionner une option</p>
-            <button type="button" onclick="changeURL('gold_00021')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00021.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00022')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00022.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00023')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00023.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00024')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00024.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00025')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00025.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00026')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00026.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00027')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00027.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00028')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00028.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00029')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00029.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00037')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00037.png" alt="button">
-            </button>
-            <div class="supertitle3"><br><hr> BOTS </div>
-            <button type="button" onclick="changeURL('gold_00000')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00000.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00001')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00001.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00003')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00003.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00004')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00004.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00005')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00005.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00006')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00006.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00007')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00007.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00008')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00008.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00009')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00009.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00010')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00010.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00011')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00011.png" alt="button">
-            </button>
-            <div class="supertitle3"><br><hr> VEHICLES </div>
-            <button type="button" onclick="changeURL('gold_00002')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00002.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00012')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00012.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00013')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00013.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00014')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00014.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00015')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00015.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00016')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00016.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00017')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00017.png" alt="button">
-            </button>
-            <div class="supertitle3"><br><hr> AIR </div>
-            <button type="button" onclick="changeURL('gold_00018')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00018.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00019')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00019.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00020')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00020.png" alt="button">
-            </button>
-            <div class="supertitle3"><br><hr> STRUCTURES </div>
-            <button type="button" onclick="changeURL('gold_00030')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00030.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00031')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00031.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00032')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00032.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00033')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00033.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00034')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00034.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00035')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00035.png" alt="button">
-            </button>
-            <button type="button" onclick="changeURL('gold_00036')">
-                <img src="https://raw.githubusercontent.com/ATLASLORD/Img_Storage/main/pa_wiki/unit_name/gold/name_00036.png" alt="button">
-            </button>
-        `;
+        document.getElementById('content').innerHTML = '<p>Veuillez sélectionner une option</p>';
     }
 }
