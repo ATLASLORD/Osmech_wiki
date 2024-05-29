@@ -259,15 +259,45 @@ hr {
 
 
 .model {
-  position: absolute;
+  position: relative;
   grid-area: 1 / 1 / 1 / 7;
   pointer-events: none;
-  /* Chain animations: initial move -> looping move */
   animation: initialMove 0.6s ease, loopModelPosition 4s ease-in-out 0.6s infinite;
 }
 
+.base-image {
+  position: relative;
+  z-index: 1;
+}
 
+.light-sweep {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  animation: sweepAnimation 4s ease-in-out infinite;
+}
 
+.sweep-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(200%) contrast(150%);
+  mask-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  mask-size: 200%;
+  mask-position: -100% 0;
+}
 
 @keyframes initialMove {
   from {
@@ -292,6 +322,15 @@ hr {
     transform: scale(0.8) translateX(-600px) translateY(-250px);
     opacity: 1;
     filter: brightness(100%) blur(0px);
+  }
+}
+
+@keyframes sweepAnimation {
+  0%, 100% {
+    mask-position: -100% 0;
+  }
+  50% {
+    mask-position: 100% 0;
   }
 }
 
