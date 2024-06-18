@@ -236,6 +236,21 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     },
     { 
+      id: "atat", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat_land_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat_land_ammo.json'
+      ]
+    },
+    { 
+      id: "atat2", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat_air_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat_air_ammo.json'
+      ]
+    },
+    { 
       id: "canhao", 
       urls: [
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/canhao/canhao.json', 
@@ -425,6 +440,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const contentDivMaxRange = document.getElementById(contentIdMaxRange);
         if (contentDivMaxRange && weaponData.max_range) {
           contentDivMaxRange.textContent = weaponData.max_range;
+        }
+
+        const contentIdYawRange = id + "-yaw_range";
+        const contentDivYawRange = document.getElementById(contentIdYawRange);
+        if (contentDivMaxRange && weaponData.yaw_range) {
+          contentDivMaxRange.textContent = weaponData.yaw_range;
         }
 
         const contentIdAmmoSource = id + "-ammo_source";
