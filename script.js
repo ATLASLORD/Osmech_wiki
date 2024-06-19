@@ -244,8 +244,9 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     },
     { 
-      id: "atat2", 
+      id: "atata", 
       urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat.json',
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat_air_tool_weapon.json',
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat_air_ammo.json'
       ]
@@ -444,8 +445,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const contentIdYawRange = id + "-yaw_range";
         const contentDivYawRange = document.getElementById(contentIdYawRange);
-        if (contentDivMaxRange && weaponData.yaw_range) {
-          contentDivMaxRange.textContent = weaponData.yaw_range;
+        if (contentDivYawRange && weaponData.yaw_range) {
+          contentDivYawRange.textContent = weaponData.yaw_range;
         }
 
         const contentIdAmmoSource = id + "-ammo_source";
