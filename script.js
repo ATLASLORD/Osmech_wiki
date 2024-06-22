@@ -206,6 +206,14 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     },
     { 
+      id: "elysium", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/air_healer/air_healer.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/air_healer/air_healer_tool.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/air_healer/air_healer_ammo.json'
+      ]
+    },
+    { 
       id: "toblerone", 
       urls: [
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_anti_nuke/st_bot_anti_nuke.json', 
