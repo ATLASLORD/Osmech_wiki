@@ -19,6 +19,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
+  // Function to simulate a click on the link for a given hash
+  function updateContentFromHash(hash) {
+    if (!hash) return;
+    const targetLink = document.querySelector(`.post-title a[href="${hash}"]`);
+    if (targetLink) {
+      targetLink.click();
+    } else {
+      console.warn('No navigation link found for hash:', hash);
+    }
+  }
+  
   // Add click event listener to each navigation link
   navLinks.forEach(link => {
     link.addEventListener('click', function(event) {
@@ -53,14 +64,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // On initial load, if a URL hash is present (e.g., "#spartak"), simulate a click on the matching navigation link
+  // On initial load, check if the URL has a hash (e.g., "#spartak")
   const currentHash = window.location.hash;
   if (currentHash) {
-    const targetLink = document.querySelector(`.post-title a[href="${currentHash}"]`);
-    if (targetLink) {
-      targetLink.click();
-    } else {
-      console.warn('No navigation link found for hash:', currentHash);
-    }
+    updateContentFromHash(currentHash);
   }
+  
+  // Listen for manual changes to the URL hash and update the content accordingly
+  window.addEventListener('hashchange', function() {
+    const newHash = window.location.hash;
+    updateContentFromHash(newHash);
+  });
 });
