@@ -1,56 +1,64 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Query all navigation buttons within the post-title container
-    const allBtns = document.querySelectorAll('.post-title button');
-    // Query all post-content sections
+    // Select all navigation links (the <a> elements inside .post-title)
+    const navLinks = document.querySelectorAll('.post-title a');
+    // Select all post-content sections (these are your content containers)
     const allPosts = document.querySelectorAll('.post-content');
-  
-    // Add click event listener to each button
-    allBtns.forEach(function(btn, index) {
-      btn.addEventListener('click', function() {
-        // If the button is already active, hide its post and remove the active state
-        if (this.classList.contains('activeBtn')) {
-          allPosts[index].classList.remove('showPost', 'animatePost');
-          this.classList.remove('activeBtn');
-          let models = allPosts[index].querySelectorAll('.model');
-          models.forEach(function(model) {
-            model.classList.remove('animateModel');
-          });
-        } else {
-          // Otherwise, deactivate all buttons and hide all posts
-          allBtns.forEach(function(btn) {
-            btn.classList.remove('activeBtn');
-          });
-          allPosts.forEach(function(post) {
-            post.classList.remove('showPost', 'animatePost');
-            let models = post.querySelectorAll('.model');
-            models.forEach(function(model) {
-              model.classList.remove('animateModel');
-            });
-          });
-          // Activate the clicked button and show its corresponding post
-          this.classList.add('activeBtn');
-          allPosts[index].classList.add('showPost');
-          setTimeout(() => {
-            allPosts[index].classList.add('animatePost');
-            let models = allPosts[index].querySelectorAll('.model');
-            models.forEach(function(model) {
-              model.classList.add('animateModel');
-            });
-          }, 1); // Adjust delay as needed
+    
+    // Function to hide all posts and remove active classes from buttons
+    function hideAllPosts() {
+      navLinks.forEach(link => {
+        const btn = link.querySelector('button');
+        if (btn) {
+          btn.classList.remove('activeBtn');
         }
       });
+      allPosts.forEach(post => {
+        post.classList.remove('showPost', 'animatePost');
+        const models = post.querySelectorAll('.model');
+        models.forEach(model => model.classList.remove('animateModel'));
+      });
+    }
+    
+    // Add click event listener to each navigation link
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // prevent default anchor behavior
+        const targetSelector = this.getAttribute('data-target'); // e.g. "#spartak"
+        if (!targetSelector) {
+          console.warn('No data-target defined for this link');
+          return;
+        }
+        const targetPost = document.querySelector(targetSelector);
+        if (!targetPost) {
+          console.warn('No post found for selector:', targetSelector);
+          return;
+        }
+        // Hide all posts and reset buttons
+        hideAllPosts();
+        // Mark the clicked link's button as active
+        const btn = this.querySelector('button');
+        if (btn) {
+          btn.classList.add('activeBtn');
+        }
+        // Show and animate the target post
+        targetPost.classList.add('showPost');
+        setTimeout(() => {
+          targetPost.classList.add('animatePost');
+          const models = targetPost.querySelectorAll('.model');
+          models.forEach(model => model.classList.add('animateModel'));
+        }, 1); // Delay can be adjusted if needed
+      });
     });
-  
-    // On initial load, check if a URL hash is present (e.g., #spartak)
+    
+    // On initial load, check if the URL has a hash (e.g. "#spartak")
     const currentHash = window.location.hash;
     if (currentHash) {
-      // Look for a link with an href that exactly matches the current hash
-      const targetLink = document.querySelector(`a[href="${currentHash}"]`);
+      // Look for a navigation link with an href exactly matching the hash
+      const targetLink = document.querySelector(`.post-title a[href="${currentHash}"]`);
       if (targetLink) {
-        // Simulate a click on the link to trigger the corresponding button logic
         targetLink.click();
       } else {
-        console.warn('No matching link found for hash:', currentHash);
+        console.warn('No navigation link found for hash:', currentHash);
       }
     }
   });
