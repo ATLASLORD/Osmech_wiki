@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     },
     { 
-      id: "tank_decoy_little", 
+      id: "babydonut", 
       urls: [
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_decoy_little/tank_decoy_little.json', 
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_decoy_little/tank_decoy_little_tool_weapon.json',
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     },
     { 
-      id: "angry_tree", 
+      id: "angrytree", 
       urls: [
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_tree/bot_tree.json', 
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_tree/bot_tree_tool_weapon.json',
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     },
     { 
-      id: "multitransport", 
+      id: "lolis", 
       urls: [
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/lolis/lolis.json'
       ]
