@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     },
     { 
-      id: "daddy_donut", 
+      id: "daddydonut", 
       urls: [
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_decoy/tank_decoy.json', 
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_decoy/tank_decoy_tool_weapon.json',
