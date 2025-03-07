@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
   const dataSources = [
     { 
@@ -76,40 +77,266 @@ document.addEventListener('DOMContentLoaded', function() {
         'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_drone/bot_drone_ammo.json'
       ]
     },
+    { 
+      id: "angry_tree", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_tree/bot_tree.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_tree/bot_tree_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bot_tree/bot_tree_ammo.json'
+      ]
+    },
+    { 
+      id: "halabib", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/halabib/halabib.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/halabib/halabib_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/halabib/halabib_ammo.json'
+      ]
+    },
+    { 
+      id: "daddy_donut", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_decoy/tank_decoy.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_decoy/tank_decoy_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_decoy/tank_decoy_ammo.json'
+      ]
+    },
+    { 
+      id: "tanabe", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/prex/prex.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/prex/prex_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/prex/prex_ammo.json'
+      ]
+    },
+    { 
+      id: "aegis", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_shield/tank_shield.json'
+      ]
+    },
+    { 
+      id: "beenado", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_drone/tank_drone/tank_drone.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_drone/tank_drone/tank_drone_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tank_drone/tank_drone/tank_drone_ammo.json'
+      ]
+    },
+    { 
+      id: "bumba", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bumba/bumba.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bumba/bumba_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bumba/bumba_ammo.json'
+      ]
+    },
+    { 
+      id: "gungnir", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/gigatank/gigatank.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/gigatank/gigatank_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/gigatank/gigatank_ammo.json'
+      ]
+    },
+    { 
+      id: "thorondor", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/thorondor/thorondor.json'
+      ]
+    },
+    { 
+      id: "multitransport", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/lolis/lolis.json'
+      ]
+    },
+    { 
+      id: "binho", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/binho/binho.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/binho/binho_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/binho/binho_ammo.json'
+      ]
+    },
+    { 
+      id: "kamecha", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_white_hole/st_bot_white_hole.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_white_hole/st_bot_white_hole_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_white_hole/st_bot_white_hole_ammo.json'
+      ]
+    },
+    { 
+      id: "lawnmower", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_lawnmower/st_lawnmower.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_lawnmower/st_lawnmower_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_lawnmower/st_lawnmower_ammo.json'
+      ]
+    },
+    { 
+      id: "pap", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_pap/st_pap.json'
+      ]
+    },
+    { 
+      id: "fef", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_fef/st_fef.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_fef/st_fef_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_fef/st_fef_ammo.json'
+      ]
+    },
+    { 
+      id: "ilegal", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_ilegal/st_ilegal.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_ilegal/st_ilegal_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_ilegal/missil_ammo.json'
+      ]
+    },
+    { 
+      id: "tilha", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_colum/st_colum.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_colum/st_colum_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_colum/st_colum_ammo.json'
+      ]
+    },
+    { 
+      id: "elysium", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/air_healer/air_healer.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/air_healer/air_healer_tool.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/air_healer/air_healer_ammo.json'
+      ]
+    },
+    { 
+      id: "toblerone", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_anti_nuke/st_bot_anti_nuke.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_anti_nuke/st_bot_anti_nuke_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_bot_anti_nuke/st_bot_anti_nuke_ammo.json'
+      ]
+    },
+    { 
+      id: "ggspider", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_ggspider_build/st_ggspider/st_ggspider.json'
+      ]
+    },
+    { 
+      id: "hindenburg", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_airship/st_airship.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_airship/st_airship_tool_weapon_missile.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/st_airship/st_airship_ammo_missile.json'
+      ]
+    },
+    { 
+      id: "tripod", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tripod/tripod.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tripod/tripod_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/tripod/tripod_ammo.json'
+      ]
+    },
+    { 
+      id: "atat", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat_land_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat_land_ammo.json'
+      ]
+    },
+    { 
+      id: "atata", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat_air_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/atat/atat_air_ammo.json'
+      ]
+    },
+    { 
+      id: "canhao", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/canhao/canhao.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/canhao/canhao_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/canhao/canhao_ammo.json'
+      ]
+    },
+    { 
+      id: "kinha", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/kinha/kinha.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/kinha/kinha_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/kinha/kinha_ammo.json'
+      ]
+    },
+    { 
+      id: "maciota", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/maciota/maciota.json', 
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/maciota/maciota_tool_weapon.json',
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/maciota/maciota_ammo.json'
+      ]
+    },
+    { 
+      id: "bunker", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/bunker_build/bunker/bunker.json'
+      ]
+    },
+    { 
+      id: "spell_tower", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/spell_heal/spell_heal.json'
+      ]
+    },
+    { 
+      id: "assimilator", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/metal_destructor/metal_destructor.json'
+      ]
+    },
+    { 
+      id: "sauron", 
+      urls: [
+        'https://raw.githubusercontent.com/ATLASLORD/Thorosmen/main/pa/units/thorosmen/titan_radar/titan_radar.json'
+      ]
+    },
   ];
 
-  // Load all data from the provided sources
   dataSources.forEach(({ id, urls }) => {
     Promise.all(urls.map(url => fetch(url).then(response => response.json())))
       .then(dataArray => {
         const [unitData, weaponData, ammoData] = dataArray; 
 
-        // Process and insert description
         let description = unitData.description;
         if (description && description.startsWith("!LOC:")) {
           description = description.substring(5);
         }
+
         const contentIdDesc = id + "-desc";
         const contentDivDesc = document.getElementById(contentIdDesc);
         if (contentDivDesc) {
           contentDivDesc.textContent = description;
         }
 
-        // Process and insert health
         const contentIdHealth = id + "-health";
         const contentDivHealth = document.getElementById(contentIdHealth);
         if (contentDivHealth && unitData.max_health) {
           contentDivHealth.textContent = unitData.max_health;
         }
 
-        // Process and insert cost
         const contentIdCost = id + "-cost";
         const contentDivCost = document.getElementById(contentIdCost);
         if (contentDivCost && unitData.build_metal_cost) {
           contentDivCost.textContent = unitData.build_metal_cost;
         }
 
-        // Process recon observer items (e.g., vision, radar)
         if (unitData.recon && unitData.recon.observer) {
           unitData.recon.observer.items.forEach(item => {
             if (item.layer === "surface_and_air") {
@@ -121,6 +348,7 @@ document.addEventListener('DOMContentLoaded', function() {
               } else if (item.channel === 'radar_jammer') {
                 contentId = id + "-radar_jammer";
               }
+
               const contentDiv = document.getElementById(contentId);
               if (contentDiv) {
                 contentDiv.textContent = item.radius;
@@ -129,41 +357,41 @@ document.addEventListener('DOMContentLoaded', function() {
           });
         }
 
-        // Process navigation details
         const contentIdNavType = id + "-nav_type";
         const contentDivNavType = document.getElementById(contentIdNavType);
         if (contentDivNavType && unitData.navigation && unitData.navigation.type) {
           contentDivNavType.textContent = unitData.navigation.type;
         }
+
         const contentIdMove = id + "-move_speed";
         const contentDivMove = document.getElementById(contentIdMove);
         if (contentDivMove && unitData.navigation && unitData.navigation.move_speed) {
           contentDivMove.textContent = unitData.navigation.move_speed;
         }
+
         const contentIdAccel = id + "-accel";
         const contentDivAccel = document.getElementById(contentIdAccel);
         if (contentDivAccel && unitData.navigation && unitData.navigation.acceleration) {
           contentDivAccel.textContent = unitData.navigation.acceleration;
         }
+
         const contentIdBrake = id + "-brake";
         const contentDivBrake = document.getElementById(contentIdBrake);
         if (contentDivBrake && unitData.navigation && unitData.navigation.brake) {
           contentDivBrake.textContent = unitData.navigation.brake;
         }
+
         const contentIdTurn = id + "-turn";
         const contentDivTurn = document.getElementById(contentIdTurn);
         if (contentDivTurn && unitData.navigation && unitData.navigation.turn_speed) {
           contentDivTurn.textContent = unitData.navigation.turn_speed;
         }
 
-        // Process and insert unit types
         const contentIdUNITTYPE = id + "-UNITTYPE";
         const contentDivUNITTYPE = document.getElementById(contentIdUNITTYPE);
         if (contentDivUNITTYPE && unitData.unit_types) {
           if (Array.isArray(unitData.unit_types)) {
-            const unitTypesCleaned = unitData.unit_types
-              .map(type => type.replace('UNITTYPE_', ''))
-              .filter(type => type !== 'Custom58');
+            const unitTypesCleaned = unitData.unit_types.map(type => type.replace('UNITTYPE_', '')).filter(type => type !== 'Custom58');
             contentDivUNITTYPE.innerHTML = unitTypesCleaned.join('<br/>');
           } else {
             const type = unitData.unit_types.replace('UNITTYPE_', '');
@@ -171,7 +399,36 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         }
 
-        // Process target layers from weapon data
+        const contentIdArmor = id + "-armor";
+        const contentDivArmor = document.getElementById(contentIdArmor);
+        
+        if (contentDivArmor && unitData.unit_types) {
+          if (Array.isArray(unitData.unit_types)) {
+            let unitTypesFiltered = unitData.unit_types
+              .map(type => type.replace('UNITTYPE_', ''))
+              .filter(type => ["Land", "Air", "Structure", "Orbital", "Naval", "Hover"].includes(type));
+        
+            // If both "Land" and "Hover" are found, take "Hover"
+            if (unitTypesFiltered.includes("Land") && unitTypesFiltered.includes("Hover")) {
+              unitTypesFiltered = unitTypesFiltered.filter(type => type !== "Land");
+            }
+            
+            // If both "Air" and "Orbital" are found, take "Air"
+            if (unitTypesFiltered.includes("Air") && unitTypesFiltered.includes("Orbital")) {
+              unitTypesFiltered = unitTypesFiltered.filter(type => type !== "Orbital");
+            }
+            
+            contentDivArmor.innerHTML = unitTypesFiltered.join('<br/>');
+          } else {
+            const type = unitData.unit_types.replace('UNITTYPE_', '');
+            if (["Land", "Air", "Structure", "Orbital", "Naval", "Hover"].includes(type)) {
+              contentDivArmor.textContent = type;
+            }
+          }
+        }
+        
+
+
         const contentIdTargetLayers = id + "-target_layers";
         const contentDivTargetLayers = document.getElementById(contentIdTargetLayers);
         if (contentDivTargetLayers && weaponData.target_layers) {
@@ -186,44 +443,64 @@ document.addEventListener('DOMContentLoaded', function() {
               .replace('Surface', '');
           }
         }
+        
 
-        // Process and insert max range
         const contentIdMaxRange = id + "-max_range";
         const contentDivMaxRange = document.getElementById(contentIdMaxRange);
         if (contentDivMaxRange && weaponData.max_range) {
           contentDivMaxRange.textContent = weaponData.max_range;
         }
 
-        // Process and insert ammo source
+        const contentIdYawRange = id + "-yaw_range";
+        const contentDivYawRange = document.getElementById(contentIdYawRange);
+        if (contentDivYawRange && weaponData.yaw_range) {
+          contentDivYawRange.textContent = weaponData.yaw_range;
+        }
+
         const contentIdAmmoSource = id + "-ammo_source";
         const contentDivAmmoSource = document.getElementById(contentIdAmmoSource);
         if (contentDivAmmoSource && weaponData.ammo_source) {
-          contentDivAmmoSource.textContent = weaponData.ammo_source;
+         contentDivAmmoSource.textContent = weaponData.ammo_source;
         }
 
-        // Process and insert recharge rate
         const contentIdRecharge = id + "-recharge";
         const contentDivRecharge = document.getElementById(contentIdRecharge);
         if (contentDivRecharge && weaponData.ammo_capacity && weaponData.ammo_demand) {
-          const rechargeRate = weaponData.ammo_capacity / weaponData.ammo_demand;
-          contentDivRecharge.textContent = rechargeRate + "s";
-        }
+         const rechargeRate = weaponData.ammo_capacity / weaponData.ammo_demand;
+        contentDivRecharge.textContent = rechargeRate + "s";
+      }
 
-        // Process and insert rate of fire
+        const contentIdAmmoCapacity = id + "-ammo_capacity";
+        const contentDivAmmoCapacity = document.getElementById(contentIdAmmoCapacity);
+        if (contentDivAmmoCapacity && weaponData.ammo_capacity) {
+        contentDivAmmoCapacity.textContent = weaponData.ammo_capacity;
+      }
+
+
+        const contentIdAmmosPerCharge = id + "-ammos_per_charge";
+        const contentDivAmmosPerCharge = document.getElementById(contentIdAmmosPerCharge);
+        if (contentDivAmmosPerCharge && weaponData.ammo_capacity && weaponData.ammo_per_shot) {
+        const ammosPerCharge = weaponData.ammo_capacity / weaponData.ammo_per_shot;
+        contentDivAmmosPerCharge.textContent = ammosPerCharge;
+       }
+
+
+
+
+
         const contentIdRateOfFire = id + "-rate_of_fire";
         const contentDivRateOfFire = document.getElementById(contentIdRateOfFire);
         if (contentDivRateOfFire && weaponData.rate_of_fire) {
           contentDivRateOfFire.textContent = weaponData.rate_of_fire;
         }
 
-        // Process and insert ammo per shot
         const contentIdAmmoPerShot = id + "-ammo_per_shot";
         const contentDivAmmoPerShot = document.getElementById(contentIdAmmoPerShot);
         if (contentDivAmmoPerShot && weaponData.ammo_per_shot) {
           contentDivAmmoPerShot.textContent = weaponData.ammo_per_shot;
         }
 
-        // Process and insert damage values
+
         const contentIdDamage = id + "-damage";
         const contentDivDamage = document.getElementById(contentIdDamage);
         if (contentDivDamage && ammoData.damage) {
@@ -234,7 +511,6 @@ document.addEventListener('DOMContentLoaded', function() {
           contentDivDamage.textContent = damageText;
         }
 
-        // Process and insert splash damage values
         const contentIdSplashDamage = id + "-splash_damage";
         const contentDivSplashDamage = document.getElementById(contentIdSplashDamage);
         if (contentDivSplashDamage && ammoData.splash_damage) {
@@ -244,40 +520,15 @@ document.addEventListener('DOMContentLoaded', function() {
           }
           contentDivSplashDamage.textContent = splashDamageText;
         }
+
+        const contentIdDps = id + "-dps";
+        const contentDivDps = document.getElementById(contentIdDps);
+        if (contentDivDps && weaponData.rate_of_fire && ammoData.damage) {
+        const dps = weaponData.rate_of_fire * ammoData.damage;
+        contentDivDps.textContent = dps;}
+
+
       })
       .catch(err => console.log(err));
   });
-
-  // Function to unmask or display content based on the provided id.
-  // This example hides all elements with the class "data-section" and shows only the matching section.
-  function unmaskContent(id) {
-    document.querySelectorAll('.data-section').forEach(section => {
-      section.style.display = 'none';
-    });
-    const targetSection = document.getElementById(id + '-section');
-    if (targetSection) {
-      targetSection.style.display = 'block';
-    }
-  }
-
-  // Listen for hash changes (when the URL changes manually or via a link)
-  window.addEventListener('hashchange', function() {
-    const id = window.location.hash.substring(1); // remove the '#' character
-    unmaskContent(id);
-  });
-
-  // On initial load, if a hash exists in the URL, unmask that section
-  if (window.location.hash) {
-    const id = window.location.hash.substring(1);
-    unmaskContent(id);
-  }
-
-  // Example: Button event listener to change the URL hash.
-  // Ensure you have a button with the ID "spartakButton" for this to work.
-  const spartakButton = document.getElementById('spartakButton');
-  if (spartakButton) {
-    spartakButton.addEventListener('click', function() {
-      window.location.hash = 'spartak';
-    });
-  }
 });
